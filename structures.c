@@ -7,11 +7,24 @@
  * This makes sure that each date contains all the information about itself.
  * Even if we want to change the definition of what a date is, we just need to
  * do it at one place.
+ *
  */
 struct Date {
   int day;
   int month;
   int year;
+};
+
+/**
+ * Nested structures
+ *
+ * The members of the structure type can be any type, even other structures.
+ * All of them can be different, or same. There is no restriction on that.
+ *
+ */
+struct Person {
+  int age;
+  struct Date date_of_birth;
 };
 
 void print_the_date(struct Date date) {
@@ -134,5 +147,11 @@ int main() {
   print_the_date(*date_ptr);
 
   free(date_ptr);
+
+  // Initializing a nested structure.
+  struct Person person = {
+      .age = 10, .date_of_birth = {.day = 9, .month = 7, .year = 2013}
+  };
+
   return 0;
 }
