@@ -15,5 +15,7 @@ int main() {
   }
   printf("done\n");
 
+  printf("%lu", sizeof(long));
+
   return 0;
 }
