@@ -1,4 +1,7 @@
 *
-!*.c
-!*.h
-!*.gitignore
+!*/
+*dSYM/
+!**/*.c
+!**/*.h
+!**/*.gitignore
+!**/.vscode/*.json
