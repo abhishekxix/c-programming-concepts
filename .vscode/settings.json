@@ -4,6 +4,7 @@
     "stdio.h": "c",
     "memory.h": "c",
     "string.h": "c",
-    "_types.h": "c"
+    "_types.h": "c",
+    "stdarg.h": "c"
   }
 }
