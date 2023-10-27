@@ -5,6 +5,7 @@
     "memory.h": "c",
     "string.h": "c",
     "_types.h": "c",
-    "stdarg.h": "c"
+    "stdarg.h": "c",
+    "stdbool.h": "c"
   }
 }
