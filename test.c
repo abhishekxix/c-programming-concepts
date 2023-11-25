@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
+#include "my-custom-static-lib/my-custom-static-lib.h"
+
 int main() {
   char my_string[100] = "This is my string that is very awesome.";
   const char* delimiter = " ";
@@ -16,6 +18,8 @@ int main() {
   printf("done\n");
 
   printf("%lu", sizeof(long));
+
+  print_my_custom_static_lib();
 
   return 0;
 }
